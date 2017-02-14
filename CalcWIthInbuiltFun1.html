@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+
+h2
+{
+text-align:center;
+
+}
+
+.calc
+{
+background-color:#636766;
+height:300px;
+width:270px;
+border-radius:10px;
+margin-top:50px;
+margin-left:43%;
+text-align:center;
+}
+
+
+.ans{
+margin-top:25px;	
+background-color:#bccd95;
+height:40px;
+border-radius:7px;
+}
+
+
+input[type=button]{
+width:50px;
+height:40px;
+margin:3px;
+margin-top:10px;
+border-radius:7px;
+background-color:303030;
+border:black 2px solid;
+border-top:2px 303030 solid;
+color:white;
+}
+
+
+</style>
+</head>
+
+<body>
+<h2>Calculator</h2>
+
+<form id="myForm">
+<div class="calc">
+	
+	
+	<input type="button" class="a" id="c" onclick="clearData()" value="C">
+	<input type="text" class="ans" name="txtAns" style="text-align:right" readonly><br>
+
+	
+	<div class="keys">
+	
+	<input type="button" name="btn7"onclick="dispVal(btn7.value)" value="7">
+	<input type="button" name="btn8" onclick="dispVal(btn8.value)" value="8">
+	<input type="button" name="btn9" onclick="dispVal(btn9.value)" value="9">
+	<input type="button" name="btndiv" onclick="dispVal(btndiv.value)" value="/"><br>
+
+	<input type="button" name="btn4" onclick="dispVal(btn4.value)" value="4">
+	<input type="button" name="btn5" onclick="dispVal(btn5.value)" value="5">
+	<input type="button" name="btn6" onclick="dispVal(btn6.value)" value="6">
+	<input type="button" name="btnMul" onclick="dispVal(btnMul.value)" value="*"><br>
+
+	<input type="button" name="btn1" onclick="dispVal(btn1.value)" value="1">
+	<input type="button" name="btn2" onclick="dispVal(btn2.value)" value="2">
+	<input type="button" name="btn3" onclick="dispVal(btn3.value)" value="3">
+	<input type="button" name="btnMinus" onclick="dispVal(btnMinus.value)" value="-"><br>
+
+	<input type="button" name="btn0" onclick="dispVal(btn0.value)" value="0">
+	<input type="button" name="btnDot" onclick="dispVal(btnDot.value)" value=".">
+	<input type="button" name="btnEqual" onclick="dispAns()" value="=">
+	<input type="button" name="btnAdd" onclick="dispVal(btnAdd.value)" value="+"><br>
+
+	</div>
+
+</div>
+</form>
+
+
+
+<script>
+function clearData() {
+    document.getElementById("myForm").reset();
+}
+
+function dispVal(n) {
+    myForm.txtAns.value+=n;
+}
+
+function dispAns() {
+	myForm.txtAns.value = eval(myForm.txtAns.value);
+}
+
+
+</script>
+
+</body>
+</html>
