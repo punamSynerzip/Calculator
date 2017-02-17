@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<h2>Calculator</h2>
+
+<form id="myForm">
+<div class="calc">
+	
+	
+	<input type="button" class="a" id="c" onclick="clearData()" value="C">
+	<input type="textarea" class="ans" name="txtAns" style="text-align:right" readonly><br>
+
+	
+	<div class="keys">
+	
+	<input type="button" name="btn7"onclick="dispVal(btn7.value)" value="7">
+	<input type="button" name="btn8" onclick="dispVal(btn8.value)" value="8">
+	<input type="button" name="btn9" onclick="dispVal(btn9.value)" value="9">
+	<input type="button" name="btndiv" onclick="dispVal(btndiv.value)" value="/"><br>
+
+	<input type="button" name="btn4" onclick="dispVal(btn4.value)" value="4">
+	<input type="button" name="btn5" onclick="dispVal(btn5.value)" value="5">
+	<input type="button" name="btn6" onclick="dispVal(btn6.value)" value="6">
+	<input type="button" name="btnMul" onclick="dispVal(btnMul.value)" value="*"><br>
+
+	<input type="button" name="btn1" onclick="dispVal(btn1.value)" value="1">
+	<input type="button" name="btn2" onclick="dispVal(btn2.value)" value="2">
+	<input type="button" name="btn3" onclick="dispVal(btn3.value)" value="3">
+	<input type="button" name="btnMinus" onclick="dispVal(btnMinus.value)" value="-"><br>
+
+	<input type="button" name="btn0" onclick="dispVal(btn0.value)" value="0">
+	<input type="button" name="btnDot" onclick="dispVal(btnDot.value)" value=".">
+	<input type="button" name="btnEqual" onclick="dispAns()" value="=">
+	<input type="button" name="btnAdd" onclick="dispVal(btnAdd.value)" value="+"><br>
+
+	</div>
+
+</div>
+</form>
+
+
+
+<p id ="demo"></p>
+<p id ="demo1"></p>
+<p id ="demo11"></p>
+<p id ="demo111"></p>
+<p id ="dot"></p>
+<p id ="dotIndex"></p>
+
+<p id ="demo2"></p>
+
+</body>
+</html>
